@@ -110,7 +110,7 @@ class Request
     }
 
 
-    static public function createTransaction($external_id, $product_id, $credit_party_identifier, $auto_confirm = false)
+    static public function createTransaction($external_id, $product_id, $credit_party_identifier, $auto_confirm)
     {
         $params = [];
         $params['auto_confirm'] = $auto_confirm;
