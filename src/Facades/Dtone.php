@@ -1,6 +1,6 @@
 <?php
 
-namespace Ghanem\Dtone\Facades;
+namespace Hamdy\Dtone\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -8,6 +8,6 @@ class Dtone extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'ghanem-dtone';
+        return 'hamdy-dtone';
     }
 }
