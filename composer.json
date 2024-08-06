@@ -1,0 +1,38 @@
+{
+    "name": "hamdy/dtone",
+    "description": "A Laravel Package For integrate DT One's DVS API",
+    "keywords": ["Laravel", "PHP", "dtone", "API", "DT One"],
+    "type": "laravel-package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hamdy\\Dtone\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohamed Hamdy",
+            "email": "mohamedhamdy5@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.3",
+        "illuminate/http": "^8.55|^9.32"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hamdy\\Dtone\\DtoneServiceProvider"
+            ],
+            "aliases": {
+                "Dtone": "Hamdy\\Dtone\\Facades\\Dtone"
+            }
+        }
+    }, 
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-f": "vendor/bin/phpunit --filter"
+    }
+}
