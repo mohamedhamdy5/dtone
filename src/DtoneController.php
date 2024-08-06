@@ -66,7 +66,7 @@ class DtoneController
         return Request::LookUpOperatorsForMobileNumber($mobile_number);
     }
 
-    public function createTransaction($external_id, $product_id, $credit_party_identifier, $auto_confirm)
+    public function createTransaction($external_id, $product_id, $credit_party_identifier, $auto_confirm = false)
     {
         return Request::CreateTransaction($external_id, $product_id, $credit_party_identifier, $auto_confirm);
     }  
